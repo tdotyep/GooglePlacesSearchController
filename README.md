@@ -45,7 +45,7 @@ pod "GooglePlacesSearchController"
 ##Usage
 ```swift
 var controller: GooglePlacesSearchController!
-controller = GooglePlacesAutocomplete(
+controller = GooglePlacesSearchController(
     apiKey: "YOUR_GOOGLE_MAPS_SERVER_KEY",
     placeType: PlaceType.Address
 )
@@ -57,7 +57,7 @@ Or with specified region
 var controller: GooglePlacesSearchController!
 
 let coord = CLLocationCoordinate2D(latitude: 55.751244, longitude: 37.618423)
-controller = GooglePlacesAutocomplete(
+controller = GooglePlacesSearchController(
     apiKey: "YOUR_GOOGLE_MAPS_SERVER_KEY",
     placeType: PlaceType.Address,
     coordinate: coord,
